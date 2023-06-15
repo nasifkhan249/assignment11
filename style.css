@@ -1,0 +1,106 @@
+:root {
+    --main-font: Arial, sans-serif;
+    --primary-color: #336699;
+    --secondary-color: #FF0000;
+    --container-bg-color: #EFEFEF;
+    --table-bg-color: #CCCCCC;
+    --table-border-color: #000000;
+    --table-hover-color: #FFFFCC;
+    --first-list-item-color: #0000FF;
+    --image-width: 300px;
+    --image-height: 200px;
+  }
+  
+  body {
+    font-family: var(--main-font);
+  }
+  
+  h1 {
+    color: var(--secondary-color);
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .container {
+    background-color: var(--container-bg-color);
+    max-width: 90%;
+    width: 500px;
+    height: 650px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  ul li:first-child {
+    color: var(--first-list-item-color);
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .first-item2{
+    cursor: pointer;
+  }
+  
+  img {
+    width: var(--image-width);
+    height: var(--image-height);
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td {
+    border: 1px solid var(--table-border-color);
+    padding: 8px;
+  }
+  
+  tbody tr:hover {
+    background-color: var(--table-hover-color);
+  }
+  
+  td:first-child {
+    font-weight: bold;
+  }
+  
+  tbody tr:last-child td {
+    background-color: var(--table-bg-color);
+  }
+  
+  thead th {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    padding: 8px;
+  }
+  
+  a:hover {
+    color: #FF00FF;
+  }
+  
+  a:active {
+    color: #00FF00;
+  }
+  
+  .container::before {
+    content: "Before Content";
+    display: block;
+    background-color: #FFFF00;
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .container a::after {
+    content: "After Content";
+    display: block;
+    background-color: #00FFFF;
+    padding: 5px;
+    margin-top: 10px;
+  }
+  
+  .container {
+    margin-top: 10px;
+    padding: 20px;
+    border: 1px solid #000000;
+  }
+  
+
